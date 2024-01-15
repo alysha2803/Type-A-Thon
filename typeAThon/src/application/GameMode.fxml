@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameModeController">
+   <children>
+      <ImageView fitHeight="487.0" fitWidth="840.0" layoutX="-152.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/StartScreen%20(2).png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="91.0" layoutY="54.0" prefHeight="334.0" prefWidth="505.0" spacing="15">
+      
+          <Text fill="WHITE" text="Game Modes" underline="true">
+            <font>
+               <Font name="HoloLens MDL2 Assets" size="26.0" />
+            </font>
+         </Text>
+                   <Button fx:id="normalButton" prefWidth="160" style="-fx-background-color: #FF0000; -fx-text-fill: white; -fx-font-weight: bold;" text="Normal Game" textAlignment="CENTER">
+            <font>
+               <Font name="HoloLens MDL2 Assets" size="18.0" />
+            </font>
+         </Button>
+          
+          <Button fx:id="randomWordsButton" prefWidth="160" style="-fx-background-color: #68AC83; -fx-text-fill: white; -fx-font-weight: bold;" text="Random Words" textAlignment="CENTER">
+            <font>
+               <Font name="HoloLens MDL2 Assets" size="18.0" />
+            </font>
+         </Button>
+          <Button fx:id="randomQuotesButton" prefWidth="160" style="-fx-background-color: #F57371; -fx-text-fill: white; -fx-font-weight: bold;" text="Random Quotes">
+            <font>
+               <Font name="HoloLens MDL2 Assets" size="18.0" />
+            </font>
+         </Button>
+          <Button fx:id="suddenDeathButton" prefWidth="160" style="-fx-background-color: #597497; -fx-text-fill: white; -fx-font-weight: bold;" text="Sudden Death">
+            <font>
+               <Font name="HoloLens MDL2 Assets" size="18.0" />
+            </font>
+         </Button>
+          <Button fx:id="correctionButton" prefWidth="160" style="-fx-background-color: #fe75fe; -fx-text-fill: white; -fx-font-weight: bold;" text="Correction Facility">
+            <font>
+               <Font name="HoloLens MDL2 Assets" size="17.0" />
+            </font>
+         </Button>
+          <Button fx:id="profileButton" prefWidth="160" style="-fx-background-color: #af4ca8; -fx-text-fill: white; -fx-font-weight: bold;" text="Profile">
+            <font>
+               <Font name="HoloLens MDL2 Assets" size="18.0" />
+            </font>
+         </Button>
+          <Button fx:id="leaderboardButton" prefWidth="160" style="-fx-background-color: #542A71; -fx-text-fill: white; -fx-font-weight: bold;" text="Leaderboard">
+            <font>
+               <Font name="HoloLens MDL2 Assets" size="18.0" />
+            </font>
+         </Button>
+          
+          
+          
+           <ComboBox fx:id="timerComboBox" prefWidth="160" promptText="Timer" />
+         <AnchorPane prefHeight="200.0" prefWidth="200.0" /> <!-- Adding ComboBox for timer selection -->
+      </VBox>
+   </children>
+</AnchorPane>

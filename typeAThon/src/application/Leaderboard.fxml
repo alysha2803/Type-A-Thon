@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LeaderboardController">
+    <Label fx:id="leaderboardTitleLabel" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #336699;" text="Leaderboard" />
+    <ScrollPane fitToWidth="true">
+        <ListView fx:id="leaderboardListView" prefWidth="400" style="-fx-background-color: #f4f4f4; -fx-padding: 15px; -fx-border-color: #cccccc; -fx-border-width: 1px; -fx-border-radius: 5px;">
+            <!-- Add custom cell factory in the controller to display leaderboard entries -->
+        </ListView>
+    </ScrollPane>
+    
+    <Button onAction="#goToGameMode" style="-fx-background-color: #FDB0C0;" text="Game Mode">
+      <font>
+         <Font name="HoloLens MDL2 Assets" size="12.0" />
+      </font></Button>
+</VBox>

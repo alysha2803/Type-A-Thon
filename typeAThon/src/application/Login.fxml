@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+    <children>
+      <ImageView fitHeight="539.0" fitWidth="735.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/StartScreen%20(2).png" />
+         </image>
+      </ImageView>
+        <Label layoutX="161.0" layoutY="51.0" text="Log in to your Type-A-Thon account" textAlignment="CENTER" textFill="WHITE" underline="true">
+            <font>
+                <Font name="HoloLens MDL2 Assets" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="122.0" layoutY="123.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="18.0" />
+         </font></Label>
+        <Label layoutX="123.0" layoutY="210.0" text="Password:" textFill="#fffefe">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="18.0" />
+         </font></Label>
+        <TextField fx:id="usernameField" layoutX="311.0" layoutY="120.0" />
+        <PasswordField fx:id="passwordField" layoutX="311.0" layoutY="207.0" />
+        <Button layoutX="275.0" layoutY="269.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #6FC276;" text="Login">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="14.0" />
+         </font></Button>
+        <Button layoutX="266.0" layoutY="351.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: #fbffa1;" text="Register">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="14.0" />
+         </font></Button>
+      <Label layoutX="193.0" layoutY="329.0" text="Don't have a Type-A-Thon account?" textFill="#fffefe">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="14.0" />
+         </font>
+      </Label>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="469.0" prefWidth="486.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlayerProfile">
+    <children>
+        <Label layoutX="40.0" layoutY="15.0" style="-fx-text-fill: white;" text="Select User:" />
+        <ComboBox fx:id="userComboBox" layoutX="150.0" layoutY="10.0" onAction="#handleUserSelection" prefWidth="150.0" style="-fx-text-fill: black; -fx-background-color: white;" />
+
+        <Label layoutX="40.0" layoutY="90.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-text-fill: white;" text="All-Time Stats" />
+        <Label fx:id="allTimeWpmLabel" layoutX="40.0" layoutY="110.0" style="-fx-font-size: 12px; -fx-text-fill: white;" />
+        <Label fx:id="allTimeAccuracyLabel" layoutX="40.0" layoutY="130.0" style="-fx-font-size: 12px; -fx-text-fill: white;" />
+
+        <Label layoutX="40.0" layoutY="170.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-text-fill: white;" text="Last 10 Games Stats" />
+        <Label fx:id="last10GamesWpmLabel" layoutX="40.0" layoutY="190.0" style="-fx-font-size: 12px; -fx-text-fill: white;" />
+        <Label fx:id="last10GamesAccuracyLabel" layoutX="40.0" layoutY="210.0" style="-fx-font-size: 12px; -fx-text-fill: white;" />
+
+       <Label fx:id="welcomeLabel" layoutX="40.0" layoutY="50.0" style="-fx-font-weight: bold; -fx-font-size: 16px; -fx-text-fill: white;" />
+        <Label fx:id="mostMisspelledWordsLabel" layoutX="40.0" layoutY="330.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-text-fill: white;" />
+        <Button layoutX="202.0" layoutY="421.0" onAction="#goToGameMode" text="Game Mode" />
+        
+    </children>
+</AnchorPane>
